@@ -1,7 +1,7 @@
 package com.rabbitmq.study.controller;
-import com.rabbitmq.study.product.HelloSender1;
+import com.rabbitmq.study.product.HelloSender;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class RabbitTestController {
 
     @Autowired
-    private HelloSender1 helloSender1;
+    private HelloSender helloSender;
 
-    @PostMapping("/hello")
+    @GetMapping("/hello")
     public void hello() {
-        helloSender1.send();
+        helloSender.send();
     }
 }

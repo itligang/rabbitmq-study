@@ -5,8 +5,8 @@ server:
 spring:
   rabbitmq:
     addresses: localhost
-    username: root
-    password: root
+    username: admin
+    password: 123456
     connection-timeout: 3000
     template:
       receive-timeout: 3000
