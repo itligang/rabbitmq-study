@@ -1,4 +1,4 @@
-package com.rabbitmq.study.product;
+package com.rabbitmq.study.produce;
 
 import java.util.Date;
 

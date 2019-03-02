@@ -2,7 +2,7 @@ package com.rabbitmq.study.controller;
 
 import com.rabbitmq.study.constant.MQConstants;
 import com.rabbitmq.study.message.RabbitMetaMessage;
-import com.rabbitmq.study.product.RabbitSender;
+import com.rabbitmq.study.produce.RabbitSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

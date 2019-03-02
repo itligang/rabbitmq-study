@@ -7,7 +7,7 @@ import com.github.rholder.retry.WaitStrategies;
 import com.google.common.base.Predicates;
 import com.rabbitmq.study.constant.MQConstants;
 import com.rabbitmq.study.message.RabbitMetaMessage;
-import com.rabbitmq.study.product.RabbitSender;
+import com.rabbitmq.study.produce.RabbitSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
