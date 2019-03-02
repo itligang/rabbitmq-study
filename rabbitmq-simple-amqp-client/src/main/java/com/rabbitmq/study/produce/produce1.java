@@ -25,7 +25,7 @@ public class produce1 {
         } catch (TimeoutException e) {
             e.printStackTrace();
         } finally {
-            if (channel != null) {
+            if (channel != null && channel.isOpen()) {
                 try {
                     channel.close();
                 } catch (IOException e) {
@@ -34,7 +34,7 @@ public class produce1 {
                     e.printStackTrace();
                 }
             }
-            if (connection != null) {
+            if (connection != null && connection.isOpen()) {
                 try {
                     connection.close();
                 } catch (IOException e) {
