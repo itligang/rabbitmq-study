@@ -11,7 +11,7 @@
     <modules>
         <module>rabbitmq-config</module>
         <module>rabbit-example</module>
-        <module>rabbitmq-simple-noboot</module>
+        <module>rabbitmq-simple-amqp-client</module>
     </modules>
 
     <name>rabbitmq-study</name>
