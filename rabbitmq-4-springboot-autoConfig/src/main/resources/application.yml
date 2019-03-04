@@ -1,7 +1,6 @@
 server:
-  servlet:
-    context-path: /
-  port: 10008
+  context-path: /
+  port: 10001
 
 spring:
   rabbitmq:

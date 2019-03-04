@@ -1,4 +1,4 @@
-package com.rabbitmq.study.produce;
+package com.rabbitmq.study.rout.produce;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -16,8 +16,8 @@ public class produce1 {
         try {
             connection = ConnectionUtils.getConnection();
             channel = connection.createChannel();
-            channel.queueDeclare(MQConstants.MESSAGE_QUEUE, true, false, false, null);
-            String msg = "hello world" + new Date();
+            channel.queueDeclare(MQConstants.MESSAGE_QUEUE, false, false, false, null);
+            String msg = "hello world :" + new Date();
             channel.basicPublish("", MQConstants.MESSAGE_QUEUE, null, msg.getBytes());
             System.out.println("produce--> msg: " + msg);
         } catch (IOException e) {

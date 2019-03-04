@@ -12,6 +12,8 @@
         <module>rabbitmq-config</module>
         <module>rabbit-example</module>
         <module>rabbitmq-simple-amqp-client</module>
+        <module>rabbitmq-3-springboot</module>
+        <module>rabbitmq-4-springboot-autoConfig</module>
     </modules>
 
     <name>rabbitmq-study</name>
